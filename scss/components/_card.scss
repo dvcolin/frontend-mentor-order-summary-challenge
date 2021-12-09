@@ -1,0 +1,82 @@
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: $color-white;
+  box-shadow: 0 4rem 4rem rgba($color-primary-hover, 0.15);
+
+  @media only screen and (min-width: $breakpoint-tablet) {
+    width: 30%;
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__details {
+    text-align: center;
+    padding: $space-2 $space-2 $space-3 $space-2;
+
+    @media only screen and (min-width: $breakpoint-tablet) {
+      padding: $space-3 $space-4 $space-4 $space-4;
+    }
+  }
+
+  &__paragraph {
+    margin-top: $space-1;
+
+    @media only screen and (min-width: $breakpoint-tablet) {
+      padding: $space-2;
+    }
+  }
+
+  &__order-plan {
+    display: flex;
+    align-items: center;
+    background-color: $color-light-gray;
+    padding: $space-1 $space-2;
+    margin-top: $space-2;
+    border-radius: 1.1rem;
+
+    @media only screen and (min-width: $breakpoint-tablet) {
+      padding: $space-2 $space-3;
+    }
+
+    &-details {
+      margin-left: $space-2;
+    }
+
+    &-change {
+      margin-left: auto;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: $color-primary;
+
+      &:hover {
+        color: $color-primary-hover;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: $space-3;
+  }
+
+  &__button--primary {
+    width: 100%;
+  }
+
+  &__button--secondary {
+    margin-top: $space-3;
+  }
+}
