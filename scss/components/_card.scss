@@ -10,7 +10,7 @@
   box-shadow: 0 4rem 4rem rgba($color-primary-hover, 0.15);
 
   @media only screen and (min-width: $breakpoint-tablet) {
-    width: 30%;
+    width: 45rem;
   }
 
   &__image {
@@ -37,7 +37,7 @@
     margin-top: $space-1;
 
     @media only screen and (min-width: $breakpoint-tablet) {
-      padding: 0 $space-2;
+      padding: 0 $space-1;
     }
   }
 
@@ -50,11 +50,12 @@
     border-radius: 1.1rem;
 
     @media only screen and (min-width: $breakpoint-tablet) {
-      padding: $space-2 $space-3;
+      padding: $space-2 $space-2;
     }
 
     &-details {
       margin-left: $space-2;
+      text-align: left;
     }
 
     &-change {
